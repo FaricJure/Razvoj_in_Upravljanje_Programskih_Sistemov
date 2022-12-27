@@ -7,7 +7,7 @@ Spletna aplikacija za ogled vseh plezalnih poti ter možnost komentiranja na teh
 </center>
 
 ## <p align="center">Kaj potrebujem za uspešno uporabo rešitve?<p/>
-Za uspešen prenos ter vzpostavitev rešitve boste potrebovali pred inštaliran program node.js ter mongoDB.
+Za uspešen prenos ter vzpostavitev rešitve boste potrebovali pred inštaliran program node.js ter mongoDB. Priporočljiva je tudi uporabna intuitivnega urejevalnika kode, ki vam bo olajšal uporabo naše končne rešitve.
 
 ## <p align="center">Kako zaženem spletno aplikacijo?<p/>
 

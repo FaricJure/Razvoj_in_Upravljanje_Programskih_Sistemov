@@ -1,0 +1,25 @@
+<div class="container overflow-auto">
+    <div class="card my-5">
+        <div class="card-body overflow-auto">
+            <div class="row">
+                <div class="col-auto">
+                    <h3 class="card-title d-inline-block font-weight-bold">{{name}}</h3><br/>
+                </div>
+                <div class="col-sm">
+                    <a class="badge badge-light float-right"><i class="fas fa-dumbbell"></i> {{difficulty}}</a><br/>
+                    <a class="badge badge-light float-right"><i class="fas fa-arrow-up"></i> {{length}}m </a><br/>
+                </div>
+            </div>
+        </div>
+        <div class="overflow-auto p-3">
+            {{#if session.userId}}
+                {{>comment/post}}
+            {{/if}}
+            <div id="comments">
+                {{#each comments}}
+                {{>comment/display}}
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>

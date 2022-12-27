@@ -1,0 +1,123 @@
+:root {
+    --acc1: #626496;
+    --fg1: #E3E3E3;
+}
+
+.acc1text {
+    color: var(--acc1);
+}
+
+.acc1bg {
+    background-color: var(--acc1) !important;
+}
+
+nav {
+    background-color: var(--acc1);
+}
+
+nav .dropdown-menu {
+    background-color: var(--acc1);
+}
+
+.tag {
+    display: inline-block;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 3px;
+    border-radius: 3px;
+    background-color: var(--acc1);
+    color: var(--fg1);
+}
+
+.tag-sm {
+    font-size: 14px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 3px;
+}
+
+button {
+    background-color: var(--acc1) !important;
+}
+
+.preview_box {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 50px;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.newComment {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.default-picture {
+    fill: var(--acc1);
+}
+
+.imageSquare {
+    padding: 5px;
+    border-radius: 7px;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border: 3px solid;
+    border-color: var(--acc1);
+}
+
+.commentImage {
+    width: 85px;
+    height: 85px;
+}
+
+.profileImage .imageSquare {
+    width: 300px;
+    height: 300px;
+}
+
+.imageSquare .profile-picture {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+#ppc {
+    position: relative;
+}
+
+.profile-picture {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 7px;
+}
+
+#ppb {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#ppc:hover .profile-picture {
+    opacity: 0.3;
+}
+
+#ppc:hover #ppb {
+    opacity: 1;
+}

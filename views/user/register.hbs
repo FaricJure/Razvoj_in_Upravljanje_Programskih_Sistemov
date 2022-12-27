@@ -1,0 +1,38 @@
+<div class="my-5">
+    <div class="card shadow-sm mx-auto justify-content-between" style="max-width:75%;">
+        <div class="card-header">
+            <h2 class="text-center p-3">Registracija</h2>
+        </div>
+        <div class="card-body overflow-auto">
+            <form action="register" method="post" class="px-4 py-3">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                    </div>
+                    <input type="text" name="email" class="form-control" placeholder="Elektronski naslov*" required>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="fas fa-user"></i>
+                        </span>
+                    </div>
+                    <input type="text" name="username" class="form-control" placeholder="Uporabniško ime*" required>
+                </div>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                    </div>
+                    <input type="password" name="password" class="form-control" placeholder="Geslo*" required>
+                    <input type="password" name="repeatPassword" class="form-control" placeholder="Ponovi geslo*" required>
+                </div>
+                <br/>
+                <button name="register" type="submit" class="btn btn-info">Registracija</button>
+            </form>
+        </div>
+    </div>
+</div>

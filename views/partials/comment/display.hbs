@@ -1,0 +1,24 @@
+<div class="container overflow-auto">
+    <div class="card my-1">
+        <div class="card-body overflow-auto">
+            <div class="row">
+                <div class="col-auto">
+                    <a href="/user/{{userId}}">
+                        <div class="commentImage">
+                            {{>profilePicture picture=this.picture}}
+                        </div>
+                    </a>
+                    <a class="badge badge-light text-light mt-2 acc1bg" href="/user/{{this.user}}">{{this.username}}</a><br/>
+                    <!-- <a class="badge badge-light mt-2">{{this.upvotes}} &nbsp; <i class="fas fa-thumbs-up"></i></a><br/> -->
+                </div>
+                <div class="col-sm">
+                    <p class="card-text sty">{{this.comment}}</p>
+                </div>
+                <div class="col-sm">
+                    <a class="badge badge-light float-right">{{this.uploaded}}</a><br/>
+                    <!-- <button class="btn badge-light text-light mt-2 acc1bg float-right" href="/crag/comment/upvote/{{this._id}}:{{this.crag.id}}"><i class="fas fa-thumbs-up"></i></a><br/> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

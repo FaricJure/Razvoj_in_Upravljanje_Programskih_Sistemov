@@ -1,0 +1,14 @@
+<div class="border-top"></div>
+<div class="border-top mb-3"></div>
+<form action="../comment/post" method="post">
+    <div class="row newComment">
+        <div class="col-auto mt-2">
+            <div class="commentImage">
+                {{>profilePicture picture=session.userPicture}}
+            </div>
+        </div>
+        <textarea class="col-sm form-control ml-2 mt-2" rows="3" name="comment" placeholder="Nov komentar" required></textarea>
+        </div>
+        <input name="route" value="{{routeId}}" hidden>
+        <button type="submit" name='post' class="btn btn-normal mr-3 my-2 float-right text-light">Dodaj</button>
+</form>

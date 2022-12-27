@@ -1,0 +1,34 @@
+<div class="container overflow-auto">
+    <div class="card my-5" style="max-height: 100%;">
+        <div class="card-body row">
+            <div class="col-auto">
+                <div class="profileImage" {{#if canEdit}} id="ppc"{{/if}}>
+                    {{>profilePicture}}
+                    {{#if canEdit}}
+                    <div id="ppb" class="p-3">
+                        <form method="post" enctype="multipart/form-data" action="changeProfilePicture">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="picPicker" name="image">
+                                <label id="picLabel" class="custom-file-label" for="picPicker" data-browse="Izberi"></label>
+                            </div>
+                            <input name="targetId" value="{{userId}}" hidden>
+                            <button type="submit" class="btn text-light my-2" id="pp">Naloži</button>
+                        </form>
+                    </div>
+                    {{/if}}
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="alert alert-light font-weight-bold shadow-sm" role="alert">
+                    <i class="fas fa-envelope-open"></i> &nbsp; <a class="acc1text" href="mailto:{{email}}">{{email}}</a>
+                </div>
+                <div class="alert alert-light font-weight-bold shadow-sm" role="alert">
+                    <i class="fas fa-user"></i> &nbsp; {{username}}
+                </div>
+                <div class="alert alert-light font-weight-bold shadow-sm" role="alert">
+                    <i class="fas fa-comment"></i> &nbsp; <a class="acc1text">{{comments}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="container overflow-auto">
+    <div class="card my-1 clickable" onclick="location.href='/route/{{this.route_id}}'" onmouseover="this.style.background='#f2f2f2';" onmouseout="this.style.background='white';">
+        <div class="card-body overflow-auto">
+            <div class="row">
+                <div class="col-auto">
+                    {{this.name}}
+                </div>
+                <div class="col-sm">
+                    <a class="badge badge-light float-right"><i class="fas fa-dumbbell"></i> {{this.difficulty}}</a><br/>
+                    <a class="badge badge-light float-right"><i class="fas fa-arrow-up"></i> {{this.length}}m </a><br/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

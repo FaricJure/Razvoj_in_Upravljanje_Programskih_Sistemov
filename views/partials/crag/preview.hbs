@@ -1,0 +1,13 @@
+<div onclick="location.href='/crag/{{this._id}}'" onmouseover="this.style.background='#f2f2f2';" onmouseout="this.style.background='white';" class="card p-3 mt-2 row clickable">
+    <div class="row">
+    <div class="col-sm">
+            <h4 class="card-title">{{this.name}}</h4>
+            <a class="badge badge-light float-left" href="https://www.google.com/maps/place/{{this.location.latitude}},+{{this.location.longitude}}/@{{this.location.latitude}},{{this.location.longitude}}z/data=!4m5!3m4!7e2!8m2!3d{{this.location.latitude}}!4d{{this.location.longitude}}"><i class="fas fa-map-pin"></i> &nbsp; {{this.location.latitude}},{{this.location.longitude}} </a><br/>
+    </div>
+    <div class="col-sm-8 mr-3 p-2">
+        <p class="p-y-1 preview_box">
+        {{{this.description.sl}}}
+        </p>
+    </div>
+    </div>
+</div>

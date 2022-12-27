@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    {{>header}}
+    <body>
+        {{>nav}}
+        <div class="d-flex flex-column sticky-footer-wrapper" style="min-height:100vh;">
+            <main class="flex-fill container" style="flex:1 1 auto;">
+                {{{ body }}}
+            </main>
+            {{>footer}}
+        </div>
+    </body>
+</html>

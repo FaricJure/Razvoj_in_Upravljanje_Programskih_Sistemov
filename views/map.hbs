@@ -1,0 +1,25 @@
+<div class='card my-5'>
+<div id='map' style='height: 100vw;'></div>
+</div>
+<script>
+    var data = "{{data}}".split(",");
+    function initMap() {
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 9,
+            center: { lat: 46.119944, lng: 14.815333 },
+        });
+        for(i = 0; i < data.length; i += 4) {
+            var marker = new google.maps.Marker({
+                title: data[i+1],
+                position: {lat: parseFloat(data[i+2]), lng: parseFloat(data[i+3])},
+                map: map,
+            });
+            const id = data[i];
+            marker.addListener("click", () => {
+                window.location.href = "/crag/".concat(id);
+           });
+        }
+    }
+
+window.initMap = initMap;
+</script>

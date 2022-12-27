@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="/">
+        <i class="fas fa-mountain"></i>
+        Plezalnik
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/">
+                    <i class="fas fa-list"></i> Plezališča<span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/crag/map">
+                    <i class="fas fa-map"></i> Zemljevid<span class="sr-only">(current)</span>
+                </a>
+            </li>
+            {{#if session.userId }}
+            <li class="nav-item">
+                <a class="nav-link{{#if active.profile}} active{{/if}}" href="/user/{{session.userId}}">
+                    <i class="fas fa-user"></i> Profil<span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/user/logout">
+                    <i class="fas fa-sign-out-alt"></i> Odjava<span class="sr-only">(current)</span>
+                </a>
+            </li>
+            {{else}}
+            <li class="nav-item">
+                <a class="nav-link{{#if active.register}} active{{/if}}" href="/user/register">
+                    <i class="fas fa-user"></i> Registracija<span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link{{#if active.login}} active{{/if}}" href="/user/login">
+                    <i class="fas fa-sign-in-alt"></i> Prijava<span class="sr-only">(current)</span>
+                </a>
+            </li>
+            {{/if}}
+        </ul>
+    </div>
+</nav>

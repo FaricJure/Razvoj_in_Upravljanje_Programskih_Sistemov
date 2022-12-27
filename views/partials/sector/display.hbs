@@ -1,0 +1,19 @@
+<div class="container overflow-auto">
+    <div class="card my-1">
+        <div class="card-body overflow-auto">
+            <div class="row mb-3">
+                <h4 class="col-auto">
+                    {{this.name}}
+                </h4>
+                <div class="col-sm">
+                    <a class="badge badge-light float-right">{{this.routes.length}} <i class="fas fa-route"></i></a><br/>
+                </div>
+            </div>
+            <div class="row" id="routes">
+                {{#each routes}}
+                {{>route/preview}}
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>

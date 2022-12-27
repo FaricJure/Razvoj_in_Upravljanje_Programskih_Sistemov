@@ -1,0 +1,31 @@
+<div class="container overflow-auto">
+    <div class="card my-5">
+        <div class="card-body overflow-auto">
+            <div class="row">
+                <div class="col-auto">
+                    <h3 class="card-title d-inline-block font-weight-bold">{{name}}</h3><br/>
+                    <a class="badge badge-light float-left" href="https://www.google.com/maps/place/{{location.latitude}},+{{location.longitude}}/@{{location.latitude}},{{location.longitude}}z/data=!4m5!3m4!7e2!8m2!3d{{location.latitude}}!4d{{location.longitude}}"><i class="fas fa-map-pin"></i> &nbsp; {{location.latitude}},{{location.longitude}} </a><br/>
+                    <a class="badge badge-light float-left"><i class="fas fa-chevron-up"></i> {{location.altitude}} n.m.</a><br/>
+                </div>
+                <div class="col-sm">
+                    {{#if kid_friendly}}
+                    <a class="badge badge-light float-right"><i class="fas fa-baby"></i></a><br/>
+                    {{/if}}
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="container my-3">
+                    <p class="card-text sty">{{{description}}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="overflow-auto p-3">
+            <div id="sectors">
+                {{#each sectors}}
+                {{>sector/display}}
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>

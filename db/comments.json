@@ -1,0 +1,76 @@
+[{
+  "_id": {
+    "$oid": "63aa2376dcedec022130a6ad"
+  },
+  "route": "e20fa84693d1b2a26b1d48aa586462aeb95009ee73397fc4251b8b2d9edb2caa",
+  "user": {
+    "$oid": "63a978853d7ec72b138d993f"
+  },
+  "comment": "123",
+  "uploaded": {
+    "$date": {
+      "$numberLong": "1672094582304"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63aa23e907079704dbd98c8d"
+  },
+  "route": "e20fa84693d1b2a26b1d48aa586462aeb95009ee73397fc4251b8b2d9edb2caa",
+  "user": {
+    "$oid": "5e94d816050a838bf6aa0f64"
+  },
+  "comment": "Lepa smer",
+  "uploaded": {
+    "$date": {
+      "$numberLong": "1672094697624"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63aa4a90e5995e40311eacb1"
+  },
+  "route": "542bc7c1b339c57d9b77d228f2364508df4e9c9a11e1ced3441c3fb285982cb8",
+  "user": {
+    "$oid": "5e94d816050a838bf6aa0f64"
+  },
+  "comment": "Lepa smer. 5 zvezdic. Priporočam!",
+  "uploaded": {
+    "$date": {
+      "$numberLong": "1672104592176"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63aa4ad0e5995e40311eacd4"
+  },
+  "route": "542bc7c1b339c57d9b77d228f2364508df4e9c9a11e1ced3441c3fb285982cb8",
+  "user": {
+    "$oid": "63aa4aafe5995e40311eacb7"
+  },
+  "comment": "Težka za oceno...",
+  "uploaded": {
+    "$date": {
+      "$numberLong": "1672104656066"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63aa4b69e5995e40311ead04"
+  },
+  "route": "542bc7c1b339c57d9b77d228f2364508df4e9c9a11e1ced3441c3fb285982cb8",
+  "user": {
+    "$oid": "63aa4ae1e5995e40311eacda"
+  },
+  "comment": "Predlagal bi višjo oceno. Podobno težka kot sosednja - obelix...",
+  "uploaded": {
+    "$date": {
+      "$numberLong": "1672104809625"
+    }
+  },
+  "__v": 0
+}]

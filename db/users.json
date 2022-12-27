@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "5e94d816050a838bf6aa0f64"
+  },
+  "username": "urbanprah",
+  "email": "urban.prah@gmail.com",
+  "password": "$2b$10$m.3eWHs4Gc7U4/m9QG7duelQ9eB7uAlXOKZfEWKdGsrwvziLAueiu",
+  "picture": "85685f7e47a189440fd0e65b0898a905",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63a978853d7ec72b138d993f"
+  },
+  "picture": null,
+  "username": "lolek",
+  "email": "lolek@gmail.com",
+  "password": "$2b$10$9NWJu0i4pqXucgqlqzEPguRi0ao5tgQL5Guscv4D9/TFy560dm04O",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63aa4aafe5995e40311eacb7"
+  },
+  "picture": null,
+  "username": "testuser1",
+  "email": "testuser1@gmail.com",
+  "password": "$2b$10$lKdleap4Tu517mDxD8ispOC6vTYzvIDQfrzAbTu03VMl0yxxKtWt.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63aa4ae1e5995e40311eacda"
+  },
+  "picture": "1687a2d6c0ee1ad0de50413aed15308c",
+  "username": "testuser2",
+  "email": "testuser2@gmail.com",
+  "password": "$2b$10$1y.IhN..4gRXF4Y9FVk5CecbNWJgB8N3Vx9doOlpsqLzQJ3f4bjKC",
+  "__v": 0
+}]

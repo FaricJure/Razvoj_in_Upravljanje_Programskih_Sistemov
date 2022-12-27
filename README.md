@@ -26,3 +26,11 @@ S pomočjo orodja `MongoDB Compass` ustvarimo lokalno podatkovno bazo z imenom `
 node app.js
 ```
 > Dostopna na http://localhost:3000
+## <p align="center">Kaj je novega?<p/>
+Najnovejša verzija zdaj še omogoča dodajanje komentarjev na objavah plezišč. Prav tako pa si lahko še dodatno personalizirate vaš profil z novo sliko prek katere vas lahko potem drugi prepoznajo.
+                    
+<center>
+<img src="./porocila/slike/comments.png"" />
+</center> 
+
+----
